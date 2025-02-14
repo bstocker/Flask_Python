@@ -28,12 +28,15 @@ def carre(val_user):
 
     return "<h2>Le carré de votre valeur est : </h2>" + str(result) + ", le résultat est " + pair
 
-@app.route('/max/<numbers>')
-def find_max(numbers):
-    numbers_list = numbers.split('/')
-    
-    numbers_list = [int(num) for num in numbers_list]
-    
-    max_value = max(numbers_list)
-    
-    return f'La valeur maximale est : {max_value}'
+@app.route('/max/<path:valeurs>')
+def valeur_max(valeurs):
+    liste_valeurs = []
+    for valeur in valeurs.split('/'):
+        liste_valeurs.append(int(valeur))
+
+    max_valeur = liste_valeurs[0]
+    for nombre in liste_valeurs:
+        if nombre > max_valeur:
+            max_valeur = nombre
+
+    return f"<h2>La valeur maximale est : {max_valeur}</h2>"
