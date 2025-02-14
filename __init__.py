@@ -1,7 +1,5 @@
 from flask import Flask
 from flask import render_template
-from flask import json
-import sqlite3
                                                                                                                                        
 app = Flask(__name__)                                                                                                                  
                                                                                                                                        
@@ -22,4 +20,10 @@ def contact():
 
 @app.route('/calcul_carre/<int:val_user>')
 def carre(val_user):
-    return "<h2>Le carré de votre valeur est : </h2>" + str(val_user * val_user)
+    result = val_user * val_user
+    pair = "impair"
+
+    if result % 2 == 0:
+        pair = "pair"
+
+    return "<h2>Le carré de votre valeur est : </h2>" + str(result) + ", le résultat est " + pair
