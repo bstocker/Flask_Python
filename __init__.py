@@ -40,3 +40,7 @@ def valeur_max(valeurs):
             max_valeur = nombre
 
     return f"<h2>La valeur maximale est : {max_valeur}</h2>"
+
+@app.route('/cnam')
+def cnam():
+    return render_template('cnam.html')
