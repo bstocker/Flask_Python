@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+
+<link rel="stylesheet" href="../static/css/style.css" />
+
+<!-- Contenu de la balise '<body>' -->
+{% block content %}
+<section>
+  <h1>Exercice 1</h1>
+  <div>
+    <h1>Titre de niveau 1</h1>
+    <h3>Titre de niveau 2</h3>
+    <h4>Titre de niveau 3</h4>
+    <h3>Titre de niveau 2</h3>
+    <h1>Titre de niveau 1</h1>
+  </div>
+  <hr />
+  <div>
+    <p>Texte en <b>gras</b>, texte en <i>italique</i>, texte <u>sougliné</u>.</p>
+    <p>Lien vers <a href="https://www.lemonde.fr/" target="_blank">l'actualité</a>.</p>
+    <p>Ecrivez-moi à <a href="mailto:brahim.tahiri.auditeur@lecnam.net">brahim.tahiri.auditeur@lecnam.net</a>.</p>
+  </div>
+  <hr />
+  <div>
+    <h3>Liste des items :</h3>
+    <ol>
+      <li>Item n°1</li>
+      <li>
+        Item n°2
+        <ul>
+          <li>Élement n°1</li>
+          <li>Élement n°2</li>
+        </ul>
+      </li>
+      <li>Item n°3</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h1>Exercice n°2</h1>
+  <table>
+    <tr>
+      <td>Ceci est un tableau</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>à 6</td>
+      <td>colonnes</td>
+    </tr>
+  </table>
+  <hr />
+  <h3 style="color: red">Une liste</h3>
+  <ol>
+    <li>
+      Premier point
+      <ul>
+        <li>Rubrique n°1</li>
+        <li>Rubrique n°2</li>
+      </ul>
+    </li>
+    <li>Second point</li>
+    <li>
+      Troisième point
+      <ul>
+        <li>Rubrique n°1</li>
+        <li>Rubrique n°2</li>
+      </ul>
+    </li>
+  </ol>
+  <hr />
+  <table>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td rowspan="3"></td>
+        <td></td>
+        <td rowspan="3"></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h1>Exercice 3</h1>
+  <form action="#" method="post">
+    <div class="form-field">
+      <label for="pseudo"><b>Pseudo</b></label>
+      <input type="text" id="pseudo" name="pseudo" placeholder="Votre pseudo" />
+    </div>
+
+    <div class="form-field">
+      <label for="motdepasse"><b>Votre mot de passe</b></label>
+      <input type="password" id="motdepasse" name="motdepasse" />
+    </div>
+
+    <div class="form-field">
+      <label for="motdepasse_confirmation"><b>Ressaisir votre mot de passe</b></label>
+      <input type="password" id="motdepasse_confirmation" name="motdepasse_confirmation" />
+    </div>
+
+    <div class="form-field">
+      <b>OS préféré</b>
+      <div>
+        <input type="radio" id="windows10" name="OS" value="Windows 10" />
+        <label for="windows10">Windows 10</label>
+      </div>
+      <div>
+        <input type="radio" id="windows11" name="OS" value="Windows 11" />
+        <label for="windows11">Windows 11</label>
+      </div>
+      <div>
+        <input type="radio" id="macosx" name="OS" value="MacOS X" />
+        <label for="macosx">MacOS X</label>
+      </div>
+      <div>
+        <input type="radio" id="linux" name="OS" value="Linux" />
+        <label for="linux">Linux</label>
+      </div>
+      <div>
+        <input type="radio" id="autre" name="OS" value="Autre" />
+        <label for="autre">Autre</label>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <b>Vous possédez</b>
+      <div>
+        <input type="checkbox" id="desktop" name="desktop" />
+        <label for="desktop">Un ordinateur de bureau</label>
+      </div>
+      <div>
+        <input type="checkbox" id="laptop" name="laptop" />
+        <label for="laptop">Un ordinateur portable</label>
+      </div>
+      <div>
+        <input type="checkbox" id="smartphone" name="smartphone" />
+        <label for="smartphone">Un smartphone (Samsung, iPhone, etc.)</label>
+      </div>
+      <div>
+        <input type="checkbox" id="tablet" name="tablet" />
+        <label for="tablet">Une tablette (Samsung, iPad, etc.)</label>
+      </div>
+    </div>
+
+    <div class="form-field">
+      <b>Votre profession</b>
+      <select name="profession" id="profession">
+        <option value="Chômeur">Chômeur</option>
+        <option value="Étudiant">Étudiant</option>
+        <option value="Fonctionnaire">Fonctionnaire</option>
+        <option value="Privé">Privé</option>
+        <option value="Retraité">Retraité</option>
+      </select>
+    </div>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+</section>
+{% endblock %}

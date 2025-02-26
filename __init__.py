@@ -22,5 +22,9 @@ def exercices_base3():
 def exercices_base4():
     return render_template('exercices_base4.html')
 
+@app.route('/tp1')
+def tp1():
+    return render_template('tp1.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
