@@ -1,10 +1,6 @@
-from flask import Flask
-from flask import render_template
+from flask import Flask, render_template
 
 app = Flask(__name__)
-
-if __name__ == '__main__':
-  app.run(debug = True)
 
 @app.route('/')
 def index():
@@ -13,3 +9,6 @@ def index():
 @app.route('/exercices_base1')
 def exercices_base1():
     return render_template('exercices_base1.html')
+
+if __name__ == '__main__':
+    app.run(debug=True)
