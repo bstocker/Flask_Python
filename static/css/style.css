@@ -28,3 +28,19 @@ td {
 ul {
   color: red;
 }
+
+form {
+  width: 25%;
+}
+
+textarea {
+  resize: none;
+  height: 150px;
+  padding: 1%;
+}
+
+.form-field {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 2%;
+}
