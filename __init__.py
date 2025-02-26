@@ -10,5 +10,9 @@ def index():
 def exercices_base1():
     return render_template('exercices_base1.html')
 
+@app.route('/exercices_base2')
+def exercices_base2():
+    return render_template('exercices_base2.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
