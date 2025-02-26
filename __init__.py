@@ -14,5 +14,9 @@ def exercices_base1():
 def exercices_base2():
     return render_template('exercices_base2.html')
 
+@app.route('/exercices_base3')
+def exercices_base3():
+    return render_template('exercices_base3.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

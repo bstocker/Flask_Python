@@ -10,6 +10,21 @@ hr {
   border: 1px solid black;
 }
 
+table {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-spacing: 0;
+  width: 15%;
+}
+
+th,
+td {
+  padding: 2%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+
 ul {
   color: red;
 }
