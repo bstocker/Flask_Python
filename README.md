@@ -50,12 +50,7 @@ Voici une vidéo d'accompagnement pour vous aider dans cette séquence de créat
  . . 2.2.1 Adresses = utilisez le sous-domaine qui vous appartient que vous trouverez dans l'information " Les sous-domaines suivants vous appartiennent et sont actuellement inutilisés : {Site}.alwaysdata.net  
  . . 2.2.2 Répertoire d'installation = **/www/flask**  
  . 2.2.3 N'oubliez pas d'Accepter les conditions.  
-3° - Autoriser les connexions SSH :  
- . 3.1 - Cliquez sur SSH (Accès distant).  
- . 3.2 - Modifier les paramètres de votre utilisateur.  
- . 3.3 - Définissez si besion un nouveau mot de passe.  
- . 3.4 - Cliquez sur **Activer la connexion par mot de passe**.  
-  
+    
 **Travail demandé :** Mettre en ligne votre application Flask "Hello World !" et **copier l'URL de votre site dans la discussion public**.  
   
 Notions acquises lors de cette séquence :  
